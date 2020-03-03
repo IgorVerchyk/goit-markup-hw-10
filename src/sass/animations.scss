@@ -1,0 +1,93 @@
+.anim1 {
+  animation-name: animtext;
+  animation-duration: 1500ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes animtext {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-50%);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.anim2 {
+  animation-name: animlowtext;
+  animation-duration: 1500ms;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+  animation-delay: 1500ms;
+  animation-fill-mode: backwards;
+}
+@keyframes animlowtext {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-50%);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.anim3 {
+  animation-name: animlogo;
+  animation-duration: 700ms;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+@keyframes animlogo {
+  0% {
+    transform: scale(0);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.anim-butt--delay {
+  animation-delay: 3000ms;
+}
+.anim-logo--delay {
+  animation-delay: 3700ms;
+}
+.call--anim:hover {
+  animation-name: call;
+  animation-timing-function: linear;
+  animation-duration: var(--anim-time);
+  animation-iteration-count: 5;
+}
+@keyframes call {
+  0% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}
+.mail--anim:hover {
+  animation-name: mail;
+  animation-timing-function: linear;
+  animation-duration: var(--anim-time);
+  animation-iteration-count: 5;
+}
+@keyframes mail {
+  0% {
+    transform: translateY(-1%);
+  }
+  100% {
+    transform: translateY(1%);
+  }
+}

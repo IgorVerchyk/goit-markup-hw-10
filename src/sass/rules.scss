@@ -1,0 +1,16 @@
+.mart-item:nth-child(4n) {
+  margin-right: 0;
+}
+.mart-item:nth-last-child(-n + 4) {
+  margin-bottom: 0;
+}
+.actmenu-button:nth-child(4) {
+  width: 166px;
+  margin-top: 4px;
+}
+.actmenu-button:nth-last-child(-n + 2) {
+  margin-right: 0;
+}
+.blog-item:nth-child(3n) {
+  margin-right: 0;
+}

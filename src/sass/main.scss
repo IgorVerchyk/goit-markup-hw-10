@@ -1,6 +1,20 @@
 /*
  * Все паршалы импортировать в этот файл
  */
-
+@import 'vars.scss';
 @import 'normalize.scss';
 @import 'base.scss';
+// utilites
+@import './rectancles.scss';
+@import './rules.scss';
+@import './animations.scss';
+// components
+@import './container.scss';
+@import './header.scss';
+@import './hero.scss';
+@import './about.scss';
+@import './container-title.scss';
+@import './mart.scss';
+@import './actmenu.scss';
+@import './blog.scss';
+@import './footer.scss';

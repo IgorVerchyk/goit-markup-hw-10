@@ -1,0 +1,80 @@
+.mart {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  padding-bottom: 100px;
+  margin: 0;
+}
+.mart-item {
+  position: relative;
+  flex-basis: calc(100% / 4 - 23px);
+  flex-grow: 0;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  &:hover .mart-item__name {
+    background-color: $accent-color;
+  }
+  &:focus .mart-item__name {
+    background-color: $accent-color;
+  }
+  &:hover .mart-item__prise {
+    background-color: $accentp-color;
+  }
+  &:focus .mart-item__prise {
+    background-color: $accentp-color;
+  }
+  &:hover .actmenu {
+    opacity: 1;
+  }
+}
+.mart-item__overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.mart-item__overlay {
+  position: relative;
+  height: 322px;
+  overflow: hidden;
+  &:before {
+    display: block;
+    position: absolute;
+    width: 255px;
+    height: 322px;
+    top: 0;
+    left: 0;
+    transform: translatey(100%);
+    transition: $anim-time $anim-func;
+    content: '';
+    background: $focus-overlay;
+    border: 10px solid $focus-border;
+  }
+  &:hover::before {
+    transform: translateY(0);
+  }
+}
+.mart-item__button {
+  display: flex;
+  text-decoration: none;
+  margin-left: auto;
+  font-family: $sec-font;
+  font-size: 18px;
+  font-weight: 900;
+}
+.mart-item__name {
+  text-transform: uppercase;
+  padding-left: 13px;
+  padding-top: 13px;
+  margin: 0;
+  background-color: $list-color;
+  color: $mart-icolor;
+  flex-grow: 1;
+}
+.mart-item__prise {
+  font-size: 18px;
+  padding: 13px;
+  margin: 0;
+  background-color: $prise-color;
+  color: $mart-icolor;
+}

@@ -1,0 +1,22 @@
+.rectangle::after {
+  display: flex;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  content: '';
+  width: 165px;
+  height: 16px;
+  background-image: url(../images/Rectangle.webp);
+  background-repeat: no-repeat;
+}
+.rectanglewhite::after {
+  display: flex;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  content: '';
+  width: 165px;
+  height: 16px;
+  background-image: url(../images/Rectanglewhite.webp);
+  background-repeat: no-repeat;
+}
